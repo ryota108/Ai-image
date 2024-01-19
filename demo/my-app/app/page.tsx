@@ -41,7 +41,7 @@ export default function Home() {
       <DallE3Interface />
       <div className="flex flex-wrap">
         {images.map((image) => (
-          <ImageCard prompt={image.prompt} photo={image.url} key={image.id} />
+          <ImageCard prompt={image.prompt} photo={image?.url} key={image.id} />
         ))}
       </div>
     </>
